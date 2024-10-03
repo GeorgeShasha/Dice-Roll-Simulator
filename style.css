@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: #0b0423;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 32px;
+    color: #fff;
+}
+
+.dice {
+    font-size: 112px;
+    margin: 5px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    color: #fff;
+}
+
+button {
+    background: #e91e63;
+    color: #fff;
+    font-size: 24px;
+    padding: 16px 32px;
+    border: 0;
+    outline: 0;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: red;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 32px auto;
+    max-width: 600px;
+}
+
+ul li {
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(248, 243, 243, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li span {
+    font-size: 48px;
+    margin-right: 16px;
+}
+
+.roll-animation{
+    animation-name: roll;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+}
