@@ -20,6 +20,11 @@ function updateRollHistory(){
         const listItem = document.createElement("li");
         listItem.innerHTML = `Roll ${i + 1}: <span>${getDiceFace(historyList[i])}</span>`;
         history.appendChild(listItem);
+
+        if (i === 4) {
+            rollDiceButton.style.display = 'none';
+            break;
+        }
     }
 };
 
